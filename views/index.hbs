@@ -1,2 +1,24 @@
 <h1>{{appTitle}} 🚀</h1>
 <p>Welcome Ironhacker!</p>
+
+<form action="/new-user" method="post" enctype="multipart/form-data"> 
+    <label for="">
+        email
+        <input type="text" name="email">
+    </label>
+        <label for="">
+            password
+        <input type="text" name="password">
+    </label>
+        <label for="">
+        profile Picture
+        <input type="file" name="profilePicture">
+    </label>
+    <label for="">
+        pictures of Dogs
+        <input type="file" multiple name="pictureOfDog">
+    </label>
+    <button>create account</button>
+
+    <h1>{{errorMessage}}</h1>
+</form>
